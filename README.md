@@ -41,7 +41,7 @@ Simple react starter with the following config:
 
 ## Scripts
 
-To start the local Webpack Dev Server (usually on port `8080`):
+To start the local Webpack Dev Server (usually on port `3000`):
 
 ```bash
 yarn start
