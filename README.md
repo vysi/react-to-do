@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Ventzke Media React && Redux Todos Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+// encode
 
-## Available Scripts
+Create an simple to-do / shopping list App using React:
+-    go to Google and search for “create to-do app react” or “shopping list app react”
+-    look for examples and analyses how you could build an simple to-do app
+-    start developing your own to-do app
+-    using create-react-app https://github.com/facebook/create-react-app & redux
+-    Language Base Typescript, avoid any https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md  & https://github.com/airbnb/javascript/tree/master/react
+-    create 2 Screens:
+o    list overview with to-do´s
+o    detail page of one to-do
+-    serve the list and details from Redux state, including valid routes. History API (routing) should be fully supported
+-    you have to create min. 4 files in total:
+o    app
+o    state
+o    list overview
+o    detail page
 
-In the project directory, you can run:
+// decode
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Installation
+Follow below steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+git clone https://github.com/vysi/react-to-do.git
 
-### `yarn test`
+cd react-to-do
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+yarn
 
-### `yarn build`
+Simple react starter with the following config:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React, ReactDOM
+- Webpack 3
+- Babel with es2015 and react presets
+- Bootstrap (css only, loaded from a cdn in `index.html`)
+- work with `.js` or `.jsx` files
+- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Scripts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start the local Webpack Dev Server (usually on port `8080`):
 
-### `yarn eject`
+```bash
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To lint all JavaScript files in the `src` folder:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn lint
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To build and deploy your app to `gh-pages` branch on the GitHub repo:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+yarn deploy
+```
